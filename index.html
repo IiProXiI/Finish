@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحدي الأحداثيات</title>
+    <title>مركز المعلومات</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            background: linear-gradient(to right, #cfe2f3, #3d85c6);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,11 +61,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>تحدي الأحداثيات</h1>
-        <input type="text" id="username" placeholder="أدخل اسم المستخدم" required>
-        <input type="text" id="coordinates" placeholder="أدخل أحداثيات المستخدم" required>
+        <h1>التحقق مع المعلومات</h1>
+        <input type="text" id="username" placeholder="حط اسم المستخدم" required>
+        <input type="text" id="coordinates" placeholder="حط الاحداثيات بدون مسافات" required>
         <button onclick="submitForm()">تأكيد</button>
-        <p id="result" class="fade-in">لقد أنهيت اللغز</p>
+        <p id="result" class="fade-in">مبروك أنهيت النسخة التجريبية من تحديات ومهام بروكس, لاتنسى التقييم</p>
     </div>
 
     <script>
@@ -75,8 +75,8 @@
             var resultElement = document.getElementById('result');
 
             var correctUsername = 'ظل الفجر';
-            var correctCoordinates = "33°28'55\"N 112°18'14\"W";
-
+            var correctCoordinates = "33°28'55"N112°18'14"W";
+                               
             if (username === correctUsername && coordinates === correctCoordinates) {
                 resultElement.style.display = 'block';
             } else {
